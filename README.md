@@ -124,7 +124,7 @@ Controlで使用できる属性一覧
 
  <Control Level="0" /> =>停止と同等  
 
-Ver0.1.1.0の追加点
+Ver0.1.1.0の追加点  
 ○Insertの追加
 ```
 <Normal>
