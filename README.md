@@ -102,11 +102,11 @@ Yotogi_Nameはゲーム内の夜伽コマンドと同じ物を入力する事
 ```
       <YotogiItem>
         <Yotogi_Name>責める</Yotogi_Name>
-        <controldata>
+        <ControlData>
           <Control />
           <Control />
           <Control />
-        </controldata>
+        </ControlData>
       </YotogiItem>
 ```
 ***○ Control (必須)***  
@@ -118,36 +118,45 @@ Controlで使用できる属性一覧
 ・LevelName	：興奮値による振動レベルを適用(LevelListの識別名と一致させる事)  
 ・Delay		：実行前に指定したDelay(秒)待機をする  
 ・Time		：実行後に指定したTime(秒)待機をする  
-・Insert	：trueの場合非挿入→挿入時のみ実行をする
-・Personal	：メイドの性格が一致する場合に実行をする
+・Insert	：trueの場合非挿入→挿入時のみ実行をする  
+・Personal	：メイドの性格が一致する場合に実行をする  
  LevelとLevelNameがそれぞれ定義されていた場合はLevelNameを優先  
 
  <Control Level="0" /> =>停止と同等  
 
-
+Ver0.1.1.0の追加点
+○Insertの追加
 ```
 <Normal>
-　<!--挿入時-->
-  <Control Pattern="0" Level="0" Time="0.8" />   停止 0.8秒後に次項目
-  <Control Pattern="0" Level="1" Time="0.2" />   パターン 0 振動レベル 1 で0.2秒後に次項目　　
-  <Control Pattern="0" Level="0" Time="0.5" />   停止 0.5秒後に次項目
-  <Control Pattern="0" Level="1" Time="1.0" />   パターン 0 振動レベル 1 で1.0秒後に次項目
-  <Control Pattern="0" Level="0" Time="0.5" />   停止 0.5秒後に次項目
-  <Control Pattern="3" Level="1" Time="1.0" /> 　パターン 3 振動レベル 1 で1.0秒後に次項目
+　<!--挿入時のみ実行-->
+  <Control Pattern="0" Level="0" Time="0.8" Insert="true" />   停止 0.8秒後に次項目
+  <Control Pattern="0" Level="1" Time="0.2" Insert="true" />   パターン 0 振動レベル 1 で0.2秒後に次項目　　
+  <Control Pattern="0" Level="0" Time="0.5" Insert="true" />   停止 0.5秒後に次項目
+  <Control Pattern="0" Level="1" Time="1.0" Insert="true" />   パターン 0 振動レベル 1 で1.0秒後に次項目
+  <Control Pattern="0" Level="0" Time="0.5" Insert="true" />   停止 0.5秒後に次項目
+  <Control Pattern="3" Level="1" Time="1.0" Insert="true" /> 　パターン 3 振動レベル 1 で1.0秒後に次項目
 　<!--通常責め時-->
   <Control Pattern="3" LvName="PreSet3" />     　パターン 3 興奮値のレベルで振動を続ける
 </Normal>
 ```
-
-上のパターンだと毎回挿入の振動パターンが再生される為、責める→激しく責めるというような  
-挿入状態から挿入状態のパターンだと不自然かも・・・？  
-下手に挿入用の振動パターン作るよりPatternの数字とPresetとだけのほうが良いかも・・・ 
+○Personalの追加
 ```
 <Normal>
-  <Control Pattern="2" LvName="PreSet0" />
+  <!--おねだり中(純真妹系)-->
+  <Control Pattern="4" Level="3" Time="15.0" Personal="Pure" />
+  <Control Pattern="8" Level="6" Time="30.0" Personal="Pure" />
+  <!--おねだり中(クール)-->
+  <Control Pattern="4" Level="3" Time="15.0" Personal="Cool" />
+  <Control Pattern="8" Level="6" Time="30.0" Personal="Cool" />
+  <!--おねだり中(プライド)-->
+  <Control Pattern="4" Level="3" Time="15.0" Personal="Pride" />
+  <Control Pattern="8" Level="6" Time="30.0" Personal="Pride" />
+  <!--中出しサンプル-->
+  <Control Pattern="0" Level="0" Time="0.8" />
+  <Control Pattern="0" Level="3" Time="0.2" />
 </Normal>
 ```
-  
+
 ##更新履歴
 
 ###0.1.1.0 [2016/08/28]
