@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CycloneX10Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EditInformation>
+    <EditName>UserName</EditName>
+    <TimeStamp>20160828121659</TimeStamp>
+    <Comment />
+  </EditInformation>
+  <LevelList>
+    <LevelItem Lv0="0" Lv1="0" Lv2="0" Lv3="0">STOP</LevelItem>
+    <LevelItem Lv0="1" Lv1="1" Lv2="3" Lv3="5">PreSet1</LevelItem>
+    <LevelItem Lv0="1" Lv1="2" Lv2="3" Lv3="4">PreSet2</LevelItem>
+    <LevelItem Lv0="1" Lv1="3" Lv2="5" Lv3="7">PreSet3</LevelItem>
+  </LevelList>
+  <YotogiCXConfig>
+    <GroupName>セックス正常位</GroupName>
+    <YotogiList>
+      <YotogiItem>
+        <Yotogi_Name>責める</Yotogi_Name>
+        <ControlData>
+          <!--挿入時サンプル-->
+          <Control Pattern="0" Level="0" Time="0.8" Insert="true" />
+          <Control Pattern="0" Level="1" Time="0.2" Insert="true" />
+          <Control Pattern="0" Level="0" Time="0.5" Insert="true" />
+          <Control Pattern="0" Level="1" Time="1.0" Insert="true" />
+          <Control Pattern="0" Level="0" Time="0.5" Insert="true" />
+          <Control Pattern="3" Level="1" Time="1.0" Insert="true" />
+          <!--通常責め時-->
+          <Control Pattern="3" LvName="PreSet1" />
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>強く責める</Yotogi_Name>
+        <ControlData>
+          <!--挿入時サンプル-->
+          <Control Pattern="0" Level="0" Time="0.8" Insert="true" />
+          <Control Pattern="0" Level="1" Time="0.2" Insert="true" />
+          <Control Pattern="0" Level="0" Time="0.5" Insert="true" />
+          <Control Pattern="0" Level="1" Time="1.0" Insert="true" />
+          <Control Pattern="0" Level="0" Time="0.5" Insert="true" />
+          <Control Pattern="3" Level="1" Time="1.0" Insert="true" />
+          <!--通常責め時-->
+          <Control Pattern="3" LvName="PreSet3" />
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>止める</Yotogi_Name>
+        <ControlData>
+          <Control Pattern="0" Level="0"/>
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>放尿絶頂</Yotogi_Name>
+        <ControlData>
+          <!--絶頂-->
+          <Control Pattern="4" Level="3" Time="13.0" />
+          <Control Pattern="8" Level="6" Time="12.0" />
+          <Control Pattern="-1" Level="-1" LvName="STOP" />
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>潮吹き絶頂</Yotogi_Name>
+        <ControlData>
+          <!--絶頂-->
+          <Control Pattern="4" Level="3" Time="13.0" />
+          <Control Pattern="8" Level="6" Time="12.0" />
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>中出しおねだり</Yotogi_Name>
+        <ControlData>
+          <!--おねだり中(純真妹系)-->
+          <Control Pattern="4" Level="3" Time="15.0" Personal="Pure" />
+          <Control Pattern="8" Level="6" Time="30.0" Personal="Pure" />
+          <!--おねだり中(クール)-->
+          <Control Pattern="4" Level="3" Time="15.0" Personal="Cool" />
+          <Control Pattern="8" Level="6" Time="30.0" Personal="Cool" />
+          <!--おねだり中(プライド)-->
+          <Control Pattern="4" Level="3" Time="15.0" Personal="Pride" />
+          <Control Pattern="8" Level="6" Time="30.0" Personal="Pride" />
+          <!--中出しサンプル-->
+          <Control Pattern="0" Level="0" Time="0.8" />
+          <Control Pattern="0" Level="3" Time="0.2" />
+          <Control Pattern="0" Level="0" Time="0.5" />
+          <Control Pattern="0" Level="3" Time="1.0" />
+          <Control Pattern="0" Level="0" Time="0.5" />
+          <Control Pattern="3" Level="3" Time="1.0" />
+          <!--賢者タイム-->
+          <Control Pattern="0" Level="0"/>
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>中出しする</Yotogi_Name>
+        <ControlData>
+          <!--中出しサンプル-->
+          <Control Pattern="0" Level="0" Time="0.8" />
+          <Control Pattern="0" Level="3" Time="0.2" />
+          <Control Pattern="0" Level="0" Time="0.5" />
+          <Control Pattern="0" Level="3" Time="1.0" />
+          <Control Pattern="0" Level="0" Time="0.5" />
+          <Control Pattern="3" Level="3" Time="1.0" />
+          <!--賢者タイム-->
+          <Control Pattern="0" Level="0"/>
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>外出しする</Yotogi_Name>
+        <ControlData>
+          <!--外出しサンプル-->
+          <Control Pattern="0" Level="0" Time="2.0" />
+          <Control Pattern="0" Level="3" Time="0.2" />
+          <Control Pattern="0" Level="0" Time="0.2" />
+          <Control Pattern="0" Level="3" Time="0.3" />
+          <Control Pattern="0" Level="0" Time="0.7" />
+          <Control Pattern="0" Level="3" Time="0.2" />
+          <Control Pattern="0" Level="0" Time="0.7" />
+          <Control Pattern="0" Level="3" Time="0.2" />
+          <!--賢者タイム-->
+          <Control Pattern="0" Level="0"/>
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>キスおねだり</Yotogi_Name>
+        <ControlData>
+          <Control Pattern="3" LvName="PreSet1" />
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>ホールドおねだり</Yotogi_Name>
+        <ControlData>
+          <Control Pattern="4" LvName="PreSet3" />
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>キスしながら</Yotogi_Name>
+        <ControlData>
+          <Control Pattern="5" LvName="PreSet1" />
+        </ControlData>
+      </YotogiItem>
+      <YotogiItem>
+        <Yotogi_Name>胸を揉みながら</Yotogi_Name>
+        <ControlData>
+          <Control Pattern="6" LvName="PreSet3" />
+        </ControlData>
+      </YotogiItem>
+    </YotogiList>
+  </YotogiCXConfig>
+</CycloneX10Config>
