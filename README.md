@@ -22,11 +22,11 @@ UnityInjector		Ver1.0.4.0
 ###前提条件  : **Sybarys** 又は **UnityInjector** が導入済みであること。  
 
 [![ダウンロードボタン][img_download]][master zip]を押してzipファイルをダウンロード。   
-解凍後CM3D2.CycloneX10.Plugin.dllファイルを./Sybaris/UnityInjector/フォルダに入れる。
+解凍後CM3D2.CycloneX10.Plugin.dllファイルを./Sybaris/Plugins/UnityInjector/フォルダに入れる。
 
 特定のフォーマットで記載したxmlファイルを指定のディレクトリに入れる事により動作します。
 
-./Sybaris/UnityInjector/Config/CycloneX10Xml/
+./Sybaris/Plugins/UnityInjector/Config/CycloneX10Xml/
 
 ※フォルダが無い場合は自動で生成されます。
      
